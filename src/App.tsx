@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import prisma from './client';
+import prisma from '../client';
 import './App.css'
 
 export function sum(a: number, b: number) {
@@ -11,27 +11,14 @@ export function sum(a: number, b: number) {
 async function getMovies() {
   const response = await fetch('http://localhost:3000/');
   const movies = response.json;
-
+  return movies
 }
-const car = 4
 
-async function handleNewMovie() {
 
-  const movieList = await prisma.movie.create({
-    data: {
-      title: "Movie Title",
-      description: "Movie description"
-    }
-  });
-  console.log('added new movie:', movieList)
-};
+
 
 function App() {
   const [movie, setMovie] = useState({ title: "", description: "" })
-  // useEffect(() => {
-  //   getMovies()
-  //   handleNewMovie()
-  // },[movie]);
 
 
 
@@ -53,7 +40,7 @@ function App() {
       <input />
       <button>post your movie </button>
       <div>{movies}</div>
-      <div>{car}</div>
+
     </>
   )
 }
