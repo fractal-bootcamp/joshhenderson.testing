@@ -8,8 +8,8 @@ test('adds 1 + 2 to equal 3', () => {
     expect(sum(1, 2)).toBe(3)
 })
 
-
-// describe('GET /users', function() {
+//Template:
+// describe('GET /', function() {
 //     it('responds with json', async function() {
 //       const response = await request(app)
 //         .get('/users')

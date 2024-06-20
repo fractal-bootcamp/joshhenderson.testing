@@ -19,8 +19,8 @@ model Movie {
   description String
   //relations
 
-  movieTagMovieId String
-  movieTagTagId   String
+  movieTagMovieId String?
+  movieTagTagId   String?
   Favorite        Favorite[]
   MovieTag        MovieTag[]
 }
