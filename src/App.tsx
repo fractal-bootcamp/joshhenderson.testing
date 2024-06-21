@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import prisma from '../client';
+import prisma from './client';
 import './App.css'
 
 export function sum(a: number, b: number) {
