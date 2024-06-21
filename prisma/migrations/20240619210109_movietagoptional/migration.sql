@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "Movie" ALTER COLUMN "movieTagMovieId" DROP NOT NULL,
+ALTER COLUMN "movieTagTagId" DROP NOT NULL;
